@@ -17,6 +17,7 @@ body {
 /* To use 100% on the body you would have to set it on the html as well as it needs to be propagated down. */
 
 .hero-section {
+  padding: 5%;
   display: flex;
   min-height: 100%;
   align-items: center;
@@ -25,7 +26,7 @@ body {
 }
 .card-container {
   display: flex;
-  width: 100%;
+  width: fit-content;
   gap: 30px;
   justify-content: center;
 }
@@ -53,7 +54,7 @@ body {
   filter: brightness(0.9) saturate(1) contrast(1);
   transform-origin: bottom;
   transform: scale(1) translateZ(0);
-  transition: all 0.3s;
+  transition: all 0.6s;
 }
 .card:hover .card-background {
   transform: scale(1.05) translateZ(0);
@@ -61,9 +62,15 @@ body {
 }
 .card-container:hover .card:not(:hover) {
   transform: scale(0.9);
+  opacity: 1 !important;
+}
+
+.card:hover .card-members  {
+  opacity: 1 !important;
 }
 .card-container:hover > .card:not(:hover) .card-background,
-.card-container:hover > .card:not(:hover) .card-members {
+.card-container:hover > .card:not(:hover) .card-members,
+.card-container:hover > .card:not(:hover) .card-hero-name {
   filter: brightness(0.5) saturate(0) contrast(1.2) blur(10px);
 }
 .content {
@@ -74,16 +81,20 @@ body {
   position: absolute;
 }
 .card-members {
-  color: #fff;
+  color: #ffffff;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 5px;
   margin-bottom: 8px;
   text-transform: uppercase;
+  transition: all 0.8s;
+  opacity: 0;
+  
 }
-.card-etablish {
+.card-hero-name {
   color: #fff;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 1;
+  transition: all 0.4s;
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
 }
