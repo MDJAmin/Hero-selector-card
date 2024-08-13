@@ -5,16 +5,12 @@
   box-sizing: border-box;
 }
 html {
-  /* height: 100%; */
   font-size: 14px;
   font-family: sans-serif;
 }
 body {
-  /* height: 100%; */
   height: 100vh;
 }
-
-/* To use 100% on the body you would have to set it on the html as well as it needs to be propagated down. */
 
 .hero-section {
   padding: 5%;
@@ -65,7 +61,7 @@ body {
   opacity: 1 !important;
 }
 
-.card:hover .card-members  {
+.card:hover .card-members {
   opacity: 1 !important;
 }
 .card-container:hover > .card:not(:hover) .card-background,
@@ -89,7 +85,6 @@ body {
   text-transform: uppercase;
   transition: all 0.8s;
   opacity: 0;
-  
 }
 .card-hero-name {
   color: #fff;
