@@ -67,7 +67,8 @@ body {
 .card-container:hover > .card:not(:hover) .card-background,
 .card-container:hover > .card:not(:hover) .card-members,
 .card-container:hover > .card:not(:hover) .card-hero-name {
-  filter: brightness(0.5) saturate(0) contrast(1.2) blur(10px);
+  filter: brightness(0.5) saturate(0) contrast(1.2)
+    blur(10px);
 }
 .content {
   width: 100%;
