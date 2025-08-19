@@ -67,8 +67,7 @@ body {
 .card-container:hover > .card:not(:hover) .card-background,
 .card-container:hover > .card:not(:hover) .card-members,
 .card-container:hover > .card:not(:hover) .card-hero-name {
-  filter: brightness(0.5) saturate(0) contrast(1.2)
-    blur(10px);
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(10px);
 }
 .content {
   width: 100%;
@@ -93,4 +92,31 @@ body {
   line-height: 1;
   transition: all 0.4s;
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.MDJAminDiv {
+  z-index: 4444;
+  position: fixed;
+  bottom: 5%;
+  left: 2%;
+}
+
+.MDJAmin {
+  text-decoration: none;
+  border-bottom: 1px dashed rgb(204, 204, 204);
+  border-top: 1px dashed rgb(204, 204, 204);
+  /* border-bottom: 1px dashed rgb(44, 44, 44); */
+  /* border-top: 1px dashed rgb(44, 44, 44); */
+  padding: 4px 0;
+  /* color: rgba(44, 44, 44, 0.525); */
+  color: rgba(204, 204, 204, 0.414);
+  font-family: monospace;
+  font-style: italic;
+  font-size: 1.1em;
+  transition: all 0.5s;
+}
+
+.MDJAmin:hover {
+  /* color: #000000; */
+  color: white;
 }
